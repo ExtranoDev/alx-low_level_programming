@@ -4,6 +4,8 @@
  * main - Entry point
  *
  * This file uses printf to print
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
