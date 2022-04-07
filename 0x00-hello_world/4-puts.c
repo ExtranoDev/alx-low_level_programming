@@ -1,4 +1,8 @@
 #include <stdio.h>
+/*
+ * This is a file that outputs a string
+ *
+ */
 
 int main(void)
 {
