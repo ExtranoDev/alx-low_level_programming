@@ -14,7 +14,6 @@ int main(void)
 	long int w;
 	long long t;
 	double u;
-	
 	printf("Size of a char: %d byte(s)\n", sizeof(y));
 	printf("Size of an int: %d byte(s)\n", sizeof(x));
 	printf("Size of a long int: %d byte(s)\n", sizeof(w));
