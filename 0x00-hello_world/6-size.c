@@ -13,13 +13,12 @@ int main(void)
 	int x;
 	long int w;
 	double u;
-
 	
-	printf("Size of a char: %d byte(s)\n", (unsigned long) sizeof(y));
-	printf("Size of a int: %d byte(s)\n", (unsigned long) sizeof(x));
-	printf("Size of a long int: %d byte(s)\n", (unsigned long) sizeof(w));
-	printf("Size of a long long int: %d byte(s)\n", (unsigned long) sizeof(long w));
-	printf("Size of a float: %d byte(s)\n", (unsigned long) sizeof((float) u));
+	printf("Size of a char: %lu byte(s)\n", (unsigned long) sizeof(y));
+	printf("Size of a int: %lu byte(s)\n", (unsigned long) sizeof(x));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long) sizeof(w));
+	printf("Size of a long long int: %lu byte(s)\n", (unsigned long) sizeof(long w));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long) sizeof((float) u));
 
 	return (0);
 }
