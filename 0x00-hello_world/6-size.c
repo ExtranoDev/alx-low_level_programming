@@ -12,7 +12,7 @@ int main(void)
 	char y;
 	int x;
 	long int w;
-	long long t
+	long long t;
 	double u;
 	
 	printf("Size of a char: %d byte(s)\n", sizeof(y));
