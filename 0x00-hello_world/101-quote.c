@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < (int) sizeof(mem); i++)
 	{
-		putchar(message[i]);
+		putchar(mem[i]);
 	}
 
 	return (1);
