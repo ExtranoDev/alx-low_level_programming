@@ -18,7 +18,7 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-		
+
 		a = a + 1;
 	}
 
