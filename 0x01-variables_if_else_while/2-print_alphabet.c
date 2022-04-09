@@ -9,9 +9,9 @@ int main(void)
 {
 	char x = 'a';
 
-	while (x <= 26)
+	while (x <= 'z')
 	{
-		putchar("%c",x);
+		putchar("%c", x);
 		x = x + 1;
 	}
 
