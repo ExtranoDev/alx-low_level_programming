@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (x == 'q' || x == 'e')
 		{
-			continue;
+			
 		}
 		else
 		{
