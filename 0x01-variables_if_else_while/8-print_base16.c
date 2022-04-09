@@ -18,7 +18,7 @@ int main(void)
 
 	while (a <= 'f')
 	{
-		putchar('a');
+		putchar(a);
 		a = a + 1;
 	}
 
