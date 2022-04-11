@@ -9,7 +9,7 @@ int main(void)
 {
 	int x = 0;
 	int y = 0;
-	int z = 0;
+	int z = 1;
 	int w = 0;
 
 	while (w <= 9)
@@ -47,8 +47,8 @@ int main(void)
 		w = w + 1;
 		x = 0;
 	}
-
+	
 	putchar('\n');
-
+	
 	return (0);
 }
