@@ -8,8 +8,9 @@
 int main(void)
 {
 	int x, y, w;
-	w = x = y = 0;
 	int z = 1;
+
+	x = y = z = 0;
 
 	for ( ; w <= 9; )
 	{
