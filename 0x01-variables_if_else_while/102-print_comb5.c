@@ -41,11 +41,11 @@ int main(void)
 
 			x = x + 1;
 			y = w;
-			z = x + 1;
 		}
 
 		w = w + 1;
 		x = 0;
+		z = x + 1;
 	}
 	
 	putchar('\n');
