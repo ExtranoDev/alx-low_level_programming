@@ -46,6 +46,7 @@ int main(void)
 
 		w = w + 1;
 		x = 0;
+		y = w;
 		z = x + 1;
 	}
 	
