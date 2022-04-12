@@ -8,11 +8,12 @@
 int main(void)
 {
 	int x, y, w;
+	w = x = y = 0;
 	int z = 1;
 
-	for (w = 0; w <= 9; )
+	for ( ; w <= 9; )
 	{
-		for (x = 0; x <= 9; )
+		for ( ; x <= 9; )
 		{
 			for ( ; y <= 9; y++)
 			{
@@ -42,7 +43,7 @@ int main(void)
 		y = w = w + 1;
 		z = x + 1;
 	}
-	
+
 	putchar('\n');
 
 	return (0);
