@@ -40,9 +40,8 @@ int main(void)
 			z = x + 1;
 		}
 
-		w = w + 1;
+		y = w = w + 1;
 		x = 0;
-		y = w + 1;
 		z = x + 1;
 	}
 	
