@@ -14,7 +14,7 @@ int main(void)
 	{
 		for (x = 0; x <= 9; )
 		{
-			for (y = w; y <= 9; y++)
+			for (y = w; y <= 9; )
 			{
 				for ( ; z <= 9; z++)
 				{
@@ -32,6 +32,7 @@ int main(void)
 				}
 
 				z = 0;
+				y = y + 1;
 			}
 
 			x = x + 1;
@@ -39,7 +40,7 @@ int main(void)
 		}
 
 		y = w = w + 1;
-		z = x + 1;
+		z = 1;
 	}
 
 	putchar('\n');
