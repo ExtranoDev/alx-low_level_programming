@@ -15,7 +15,7 @@ int main(void)
 		putchar(putsOut[count]);
 		count++;
 	}
-	
+
 	putchar('\n');
 
 	return (0);
