@@ -8,5 +8,5 @@ void print_alphabet(void)
 		me++;
 	}
 
-	putchar('\n');
+	_putchar('\n');
 }
