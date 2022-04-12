@@ -14,7 +14,7 @@ int main(void)
 
 	while (w <= 9)
 	{
-		while (x < 9)
+		while (x <= 9)
 		{
 			while (y <= 9)
 			{
