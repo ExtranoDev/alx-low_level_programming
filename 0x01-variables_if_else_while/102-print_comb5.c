@@ -10,13 +10,11 @@ int main(void)
 	int x, y, w;
 	int z = 1;
 
-	x = y = z = 0;
-
-	for ( ; w <= 9; )
+	for (w = 0; w <= 9; )
 	{
-		for ( ; x <= 9; )
+		for (x = 0; x <= 9; )
 		{
-			for ( ; y <= 9; y++)
+			for (y = w; y <= 9; y++)
 			{
 				for ( ; z <= 9; z++)
 				{
@@ -37,7 +35,6 @@ int main(void)
 			}
 
 			x = x + 1;
-			y = w;
 			z = x + 1;
 		}
 
