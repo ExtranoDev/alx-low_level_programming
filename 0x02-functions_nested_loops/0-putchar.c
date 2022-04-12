@@ -7,7 +7,16 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	char putsOut[8] = "_putchar";
+	int count = 0;
+
+	while (count < 8)
+	{
+		putchar(putsOut[count]);
+		count++;
+	}
+	
+	putchar('\n');
 
 	return (0);
 }
