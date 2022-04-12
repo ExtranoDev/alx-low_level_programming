@@ -4,6 +4,7 @@
  * _islower - checks if a letter is lower case
  *@c: letter to be checked
  *
+ * Return: Return depends on c
  */
 int _islower(int c)
 {
@@ -15,4 +16,6 @@ int _islower(int c)
 	{
 		return (1);
 	}
+
+	return (0);
 }
