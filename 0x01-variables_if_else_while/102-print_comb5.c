@@ -7,18 +7,16 @@
  */
 int main(void)
 {
-	int x = 0;
-	int y = 0;
+	int x, y, w;
 	int z = 1;
-	int w = 0;
 
-	while (w <= 9)
+	for (w = 0; w <= 9; )
 	{
-		while (x <= 9)
+		for (x = 0; x <= 9; )
 		{
-			while (y <= 9)
+			for (y = 0; y <= 9; )
 			{
-				while (z <= 9)
+				for ( ; z <= 9; z++)
 				{
 					putchar(w % 10 + '0');
 					putchar(x % 10 + '0');
@@ -31,26 +29,22 @@ int main(void)
 
 					putchar(',');
 					putchar(' ');
-
-					z = z + 1;
 				}
 
 				y = y + 1;
 				z = 0;
 			}
 
-			x = x + 1;
+			z = x = x + 1;
 			y = w;
-			z = x + 1;
 		}
 
-		w = w + 1;
+		y = w = w + 1;
 		x = 0;
-		y = w;
 		z = x + 1;
 	}
 	
 	putchar('\n');
-	
+
 	return (0);
 }
