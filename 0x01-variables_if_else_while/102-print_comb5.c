@@ -35,12 +35,14 @@ int main(void)
 				z = 0;
 			}
 
-			z = x = x + 1;
+			x = x + 1;
 			y = w;
+			z = x + 1;
 		}
 
-		y = w = w + 1;
+		w = w + 1;
 		x = 0;
+		y = w + 1;
 		z = x + 1;
 	}
 	
