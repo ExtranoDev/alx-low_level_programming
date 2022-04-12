@@ -26,7 +26,7 @@ int main(void)
 					putchar(y % 10 + '0');
 					putchar(z % 10 + '0');
 
-					if (w == 9 && x == 8 && y == 9 && y == 9)
+					if (w == 9 && x == 8 && y == 9)
 						break;
 
 					putchar(',');
