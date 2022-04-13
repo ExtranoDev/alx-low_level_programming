@@ -23,6 +23,6 @@ void times_table(void)
 		}
 
 		_putchar('\n');
-		y = 0
+		y = 0;
 	}
 }
