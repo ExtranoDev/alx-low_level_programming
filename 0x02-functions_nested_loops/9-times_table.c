@@ -5,13 +5,18 @@
  */
 void times_table(void)
 {
-	int x, y = 0, z;
+	int x, y = 0, z, temp;
 
 	for (x = 0; x <= 9; x++)
 	{
 		for (z = 0; z <= 9; z++)
 		{
-			_putchar(y);
+			temp = y / 10;
+
+			if (temp != 0)
+				_putchar(temp + '0');
+
+			_putchar(y % 10 + '0');
 
 			if (z == 9)
 				break;
