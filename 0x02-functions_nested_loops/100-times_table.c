@@ -2,6 +2,7 @@
 
 /**
  * print_times_table - Prints a time table of n inputed numbers
+ * @n: number of times table to be printes
  */
 void print_times_table(int n)
 {
@@ -20,14 +21,11 @@ void print_times_table(int n)
 			if (temp1 != 0)
 			{
 				_putchar(temp1 + '0');
-				temp2 = y / 10;
-				temp2 = temp2 % 10;
+				temp2 = (y / 10) % 10;
 				_putchar(temp2 + '0');
 			}
 			else if (temp2 != 0)
-			{
 				_putchar(temp2 + '0');
-			}
 
 			_putchar(y % 10 + '0');
 
