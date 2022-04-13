@@ -9,6 +9,9 @@ void print_times_table(int n)
 
 	for (x = 0; x <= n; x++)
 	{
+		if (n >= 15 || n <= 0)
+			break;
+
 		for (z = 0; z <= n; z++)
 		{
 			temp1 = y / 100;
