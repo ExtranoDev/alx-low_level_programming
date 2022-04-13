@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-	unsigned int i = 1, j = 2;
+	unsigned long int i = 1, j = 2;
 	int x;
 
-	for (x = 0; x < 50; x++)
+	for (x = 0; x < 25; x++)
 	{
-		printf("%u, %u", i, j);
+		printf("%lu, %lu", i, j);
 
-		if (x != 49)
+		if (x != 24)
 			printf(", ");
 		else
 			putchar('\n');
