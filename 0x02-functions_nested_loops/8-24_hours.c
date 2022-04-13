@@ -11,7 +11,7 @@ void jack_bauer(void)
 	{
 		for (x = 0; x < 4; x++)
 		{
-			for (y = 0; y < 7; y++)
+			for (y = 0; y < 5; y++)
 			{
 				for (z = 0; z < 10; z++)
 				{
@@ -20,6 +20,7 @@ void jack_bauer(void)
 					_putchar(':');
 					_putchar(y + '0');
 					_putchar(z + '0');
+					_putchar('\n');
 				}
 			}
 		}
