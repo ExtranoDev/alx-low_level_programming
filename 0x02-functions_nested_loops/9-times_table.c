@@ -22,7 +22,10 @@ void times_table(void)
 				break;
 
 			_putchar(',');
-			_putchar(' ');
+
+			if (y < 10)
+				_putchar(' ');
+
 			_putchar(' ');
 			y = y + x;
 		}
