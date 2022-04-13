@@ -18,10 +18,16 @@ void print_times_table(int n)
 			temp2 = y / 10;
 
 			if (temp1 != 0)
+			{
 				_putchar(temp1 + '0');
-
-			if (temp2 != 0)
+				temp2 = n / 10;
+				temp2 = temp2 % 10;
 				_putchar(temp2 + '0');
+			}
+			else if (temp2 != 0)
+			{
+				_putchar(temp2 + '0');
+			}
 
 			_putchar(y % 10 + '0');
 
