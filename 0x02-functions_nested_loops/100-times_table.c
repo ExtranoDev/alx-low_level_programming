@@ -15,7 +15,7 @@ void print_times_table(int n)
 		for (z = 0; z <= n; z++)
 		{
 			temp1 = y / 100;
-			temp2 = y / 10
+			temp2 = y / 10;
 
 			if (temp1 != 0)
 				_putchar(temp1 + '0');
