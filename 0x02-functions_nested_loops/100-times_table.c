@@ -1,5 +1,7 @@
 #include "main.h"
 
+void comp(int n);
+
 /**
  * print_times_table - Prints a time table of n inputed numbers
  * @n: number of times table to be printes
@@ -10,8 +12,7 @@ void print_times_table(int n)
 
 	for (x = 0; x <= n; x++)
 	{
-		if (n >= 15 || n <= 0)
-			break;
+		comp(n);
 
 		for (z = 0; z <= n; z++)
 		{
@@ -45,5 +46,17 @@ void print_times_table(int n)
 
 		_putchar('\n');
 		y = 0;
+	}
+}
+
+void comp(int n)
+{
+	if (n >= 15)
+	{
+		break;
+	}
+	else if (n <= 0)
+	{
+		_putchar('0');
 	}
 }
