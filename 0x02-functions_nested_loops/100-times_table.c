@@ -12,7 +12,7 @@ void print_times_table(int n)
 
 	for (x = 0; x <= n; x++)
 	{
-		if (comp(n) == 1 || comp(n) == 2)
+		if (comp(n) == 2 || comp(n) == 1)
 			break;
 
 		for (z = 0; z <= n; z++)
@@ -50,6 +50,10 @@ void print_times_table(int n)
 	}
 }
 
+/**
+ * comp - compares if inputed number with certain value
+ * @n: input n
+ */
 int comp(int n)
 {
 	if (n >= 15)
@@ -59,6 +63,7 @@ int comp(int n)
 	else if (n <= 0)
 	{
 		_putchar('0');
+		_putchar('\n');
 		return (2);
 	}
 
