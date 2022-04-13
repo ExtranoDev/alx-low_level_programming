@@ -11,7 +11,7 @@ void times_table(void)
 	{
 		for (z = 0; z <= 9; z++)
 		{
-			_putchar('0' + y);
+			_putchar(y);
 
 			if (z == 9)
 				break;
