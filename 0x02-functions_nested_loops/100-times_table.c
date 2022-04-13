@@ -20,7 +20,7 @@ void print_times_table(int n)
 			if (temp1 != 0)
 			{
 				_putchar(temp1 + '0');
-				temp2 = n / 10;
+				temp2 = y / 10;
 				temp2 = temp2 % 10;
 				_putchar(temp2 + '0');
 			}
