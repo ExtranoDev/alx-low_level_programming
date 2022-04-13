@@ -23,6 +23,8 @@ void jack_bauer(void)
 					_putchar('\n');
 				}
 			}
+			if (w == 2 & x == 3)
+				break;
 		}
 	}
 }
