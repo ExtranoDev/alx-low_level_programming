@@ -53,6 +53,8 @@ void print_times_table(int n)
 /**
  * comp - compares if inputed number with certain value
  * @n: input n
+ *
+ * Return: Return base on condition satisfied
  */
 int comp(int n)
 {
