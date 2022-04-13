@@ -25,7 +25,7 @@ void print_times_table(int n)
 
 			_putchar(y % 10 + '0');
 
-			if (z == 9)
+			if (z == n)
 				break;
 
 			_putchar(',');
