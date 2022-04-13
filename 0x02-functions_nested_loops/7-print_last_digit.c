@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _abs - Prints last digit of a given number
+ * print_last_digit - Prints last digit of a given number
  *@c: number to be checked
  *
  * Return: Return depends on c
@@ -9,7 +9,13 @@
 int print_last_digit(int c)
 {
 	if (c < 0)
-		return ((c * -1) % 10);
+	{
+		c = (c * -1) % 10;
+		_putchar(c + '0');
+		return (c);
+	}
 
-	return (c % 10);
+	c = c % 10;
+	_putchar(c + '0');
+	return (c);
 }
