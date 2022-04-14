@@ -7,14 +7,14 @@
  */
 int main(void)
 {
-	unsigned long int i = 1, j = 2;
+	double i = 1, j = 2;
 	int x;
 
-	for (x = 0; x < 98; x++)
+	for (x = 0; x < 49; x++)
 	{
-		printf("%lu, %lu", i, j);
+		printf("%.0f, %.0f", i, j);
 
-		if (x != 98)
+		if (x != 48)
 			printf(", ");
 		else
 		{
@@ -22,8 +22,8 @@ int main(void)
 			break;
 		}
 
-		i = i + j;
-		j = j + i;
+		i += j;
+		j += i;
 	}
 
 	return (0);
