@@ -7,24 +7,25 @@
  */
 int main(void)
 {
-	unsigned long int i = 1, j = 2;
+	unsigned long int i = 1, j = 2, tempSum = 0;
 	int x;
 
-	for (x = 0; x < 25; x++)
+	while(1)
 	{
-		printf("%lu, %lu", i, j);
+		if (i <= 4000000 && i % 2 == 0)
+			tempSum += i;
 
-		i = i + j;
-		j = j + i;
+		if (j <= 4000000 && j % 2 == 0)
+			tempSum += j;
 
-		if (i >= 4000000 || j >= 4000000)
-		{
-			putchar('\n');
+		if (j >= 4000000)
 			break;
-		}
 
-		printf(", ");
+		i += j;
+		j += i;
 	}
+
+	printf("%lu\n", tempSum);
 
 	return (0);
 }
