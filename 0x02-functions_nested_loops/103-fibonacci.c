@@ -8,7 +8,6 @@
 int main(void)
 {
 	unsigned long int i = 1, j = 2, tempSum = 0;
-	int x;
 
 	while(1)
 	{
