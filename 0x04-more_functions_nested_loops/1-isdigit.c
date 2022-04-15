@@ -1,0 +1,16 @@
+#include "main.c"
+
+/**
+ * _isdigit - detemines if input is a number
+ * @c: input
+ * Return: based in satisfied condition
+ */
+int _isdigit(int c)
+{
+	if (c >= '0' || c <= '9')
+		return (1);
+	else
+		return (0);
+
+	return (0);
+}
