@@ -15,6 +15,6 @@ int _isupper(int c)
 	{
 		return (0);
 	}
-	
+
 	return (0);
 }
