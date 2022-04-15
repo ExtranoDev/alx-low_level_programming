@@ -2,6 +2,7 @@
 
 /**
  * print_numbers - print possible single digit numbers
+ *
  * Return: Always void
  */
 void print_numbers(void)
