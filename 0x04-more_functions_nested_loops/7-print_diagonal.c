@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - Prints diagonal line
- * @n - how long line should be
+ * @n: how long line should be
  */
 void print_diagonal(int n)
 {
@@ -19,6 +19,7 @@ void print_diagonal(int n)
 		}
 
 		_putchar('\\');
+		_putchar('\n');
 		n--;
 		j++;
 		i = j;
