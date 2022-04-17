@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_triangle - prints trianglar pattern
@@ -15,17 +14,17 @@ void print_triangle(int size)
 		x = size - j;
 
 		for ( ; j > 0; j--)
-			putchar(' ');
+			_putchar(' ');
 
 		while (x > 0)
 		{
-			putchar('#');
+			_putchar('#');
 			x--;
 		}
 
-		putchar('\n');
+		_putchar('\n');
 	}
 
 	if (size <= 0)
-		putchar('\n');
+		_putchar('\n');
 }
