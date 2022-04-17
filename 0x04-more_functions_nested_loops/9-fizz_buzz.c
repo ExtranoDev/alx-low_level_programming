@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * fizz-buzz - prints numbers
+ * main - prints numbers
  * Return: Always 0
  */
 int main(void)
