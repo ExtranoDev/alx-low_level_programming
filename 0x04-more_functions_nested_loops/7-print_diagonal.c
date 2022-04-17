@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagonal - Prints diagonal line
@@ -6,23 +7,22 @@
  */
 void print_diagonal(int n)
 {
-	int i = 0, j = 0;
+	int i = n, j = 0;
 
-	while (n > 0)
+	while (i > 0)
 	{
-		while (i > 0)
+		while (j > 0)
 		{
-			_putchar(' ');
-			i--;
+			putchar(' ');
+			j--;
 		}
 
-		_putchar('\\');
-		_putchar('\n');
-		n--;
-		j++;
-		i = j;
+		putchar('\\');
+		putchar('\n');
+		i--;
+		j = n - i;
 	}
 
 	if (n <= 0)
-		_putchar('\n');
+		putchar('\n');
 }
