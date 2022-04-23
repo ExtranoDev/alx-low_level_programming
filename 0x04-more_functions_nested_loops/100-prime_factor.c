@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
  * main - Prints highest prime number
@@ -7,20 +8,21 @@
  */
 int main(void)
 {
-	int num = 612852475143, recPrime = 0;
-	int i = 2;
+	unsigned long num = 612852475143, i = 3;
+	int recPrime = 0;
 
-	while (i < (num / 2))
+	while (i < sqrt(num))
 	{
-		if ((i % 2 == 0) || (i % 3 == 0) || (i % 5 == 0))
+		while (num % i == 0)
 		{
-			i++;
-			continue;
-		}
-		else if (num % i == 0)
 			recPrime = i;
-		i++;
+			num /= i;
+		}
+
+		i += 2;
 	}
 
 	printf("%d\n", recPrime);
+
+	return (0);
 }
