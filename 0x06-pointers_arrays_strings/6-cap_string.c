@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *cap_string - change str to upper
+ * cap_string - change str to upper
  * @s: string
  *
  * Return: s
