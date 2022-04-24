@@ -15,11 +15,13 @@ char *cap_string(char *s)
 	{
 		if (s[0] > 96 && s[0] < 123)
 			sens = 1;
+
 		for (y = 0; nt[y] != '\0'; y++)
 		{
 			if (nt[y] == s[x])
 				sens = 1;
 		}
+
 		if (sens)
 		{
 			if (s[x] > 96 && s[x] < 123)
@@ -33,5 +35,6 @@ char *cap_string(char *s)
 				sens = 0;
 		}
 	}
+
 	return (s);
 }
