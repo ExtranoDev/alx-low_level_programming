@@ -8,21 +8,18 @@
  */
 int main(void)
 {
-	unsigned long num = 612852475143, i = 3;
-	int recPrime = 0;
+	unsigned long num = 612852475143, i = 3, recPrime = 0;
 
-	while (i < sqrt(num))
+	for ( ; i <= num; i += 2)
 	{
 		while (num % i == 0)
 		{
-			recPrime = i;
+			recPrime = num;
 			num /= i;
 		}
-
-		i += 2;
 	}
 
-	printf("%d\n", recPrime);
+	printf("%lu\n", recPrime);
 
 	return (0);
 }
