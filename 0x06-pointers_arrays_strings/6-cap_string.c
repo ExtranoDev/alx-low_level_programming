@@ -25,7 +25,7 @@ char *cap_string(char *s)
 			if (s[x] > 96 && s[x] < 123)
 			{
 				s[x] -= 32;
-				trigger = 0;
+				sens = 0;
 			}
 			else if (s[x] > 64 && s[x] <91)
 				sens = 0;
