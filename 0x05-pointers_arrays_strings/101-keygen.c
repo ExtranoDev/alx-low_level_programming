@@ -10,21 +10,22 @@
 int main(void)
 {
 	char x[100];
+	int i, j, y;
 
+	j = 0;
 	y = 0;
-	z = 0;
 	srand(time(NULL));
-	while (y < 2645)
+	while (j < 2645)
 	{
-		z = rand() % 122;
-		if (z > 32)
+		i = rand() % 122;
+		if (i > 32)
 		{
-			x[z++] = z;
-			y += z;
+			x[y++] = i;
+			j += i;
 		}
 	}
-	x[z++] = 2772 - y;
-	x[z] = '\0';
+	x[y++] = 2772 - j;
+	x[y] = '\0';
 	printf("%s", x);
 
 	return (0);
