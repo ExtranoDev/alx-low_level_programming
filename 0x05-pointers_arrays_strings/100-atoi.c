@@ -24,7 +24,7 @@ int _atoi(char *s)
 
 	while (s[y] >= '0' && s[y] <= '9')
 	{
-		num = (num * 10) + neg + (s[y] - '0');
+		num = (num * 10) + neg * (s[y] - '0');
 		y++;
 	}
 	return (num);
