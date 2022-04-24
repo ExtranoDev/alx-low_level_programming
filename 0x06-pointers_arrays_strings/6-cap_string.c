@@ -8,7 +8,8 @@
  */
 char *cap_string(char *s)
 {
-	int x, y, sens = 0;
+	int x, y;
+	int sens = 0;
 	char nt[] = ",;.!?(){}\n\t\" ";
 
 	for (x = 0; s[x] != '\0'; x++)
@@ -22,7 +23,7 @@ char *cap_string(char *s)
 				sens = 1;
 		}
 
-		if (sens)
+		if (sens == 1)
 		{
 			if (s[x] > 96 && s[x] < 123)
 			{
