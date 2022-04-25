@@ -15,9 +15,6 @@ char *leet(char *s)
 
 	for (x = 0; s[x] != '\0'; x++)
 	{
-		if (s[x] == ' ')
-			continue;
-
 		for (y = 0; low[y] != '\0' && up[y] != '\0'; y++)
 		{
 			if (s[x] == low[y] || s[x] == up[y])
