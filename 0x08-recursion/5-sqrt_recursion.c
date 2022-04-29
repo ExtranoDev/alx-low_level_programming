@@ -7,13 +7,14 @@
  */
 int _sqrt_recursion(int n)
 {
-	return sqrt_answer(n, 1);
+	return sqrt_process(n, 1);
 }
 
 /**
  * square_process - finds the sqrt
  * @i: integer
  * @g: guess number
+ * Return: sqrt
  */
 int square_process(int i, int g)
 {
