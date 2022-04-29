@@ -10,13 +10,13 @@ int is_palindrome(char *s)
 	int n = 0, half;
 
 	n = strlenChk(s, n);
-	if (n % 2 == 0)
+	if (n % 2 != 0)
 		half = n - 1;
 	return (palindrome_process(s, n, half));
 }
 
 /**
- * prime_process - check for prime
+ * palindrome_process - check if palindrome
  * @s: String
  * @i: integer
  * @j: half of the string
