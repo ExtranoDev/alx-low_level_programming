@@ -7,9 +7,18 @@
  */
 int _sqrt_recursion(int n)
 {
-	int i = 1;
+	return sqrt_answer(n, 1);
+}
 
-	if (i == 1)
-		return (i)
-
+/**
+ * square_process - finds the sqrt
+ * @i: integer
+ * @g: guess number
+ */
+int square_process(int i, int g)
+{
+	if (g * g == i)
+		return (g);
+	else
+		return (square_process(i, g += 1));
 }
