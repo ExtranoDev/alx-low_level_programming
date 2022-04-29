@@ -7,7 +7,7 @@
  */
 int _sqrt_recursion(int n)
 {
-	return square_process(n, 1);
+	return (square_process(n, 1));
 }
 
 /**
@@ -21,7 +21,7 @@ int square_process(int i, int g)
 	if (g * g == i)
 		return (g);
 	else if (g * g > i || i < 0)
-		return (-1)
+		return (-1);
 	else
 		return (square_process(i, g += 1));
 }
