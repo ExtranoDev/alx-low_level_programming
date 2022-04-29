@@ -22,5 +22,5 @@ char *_strchr(char *s, char c)
 			break;
 		i++;
 	}
-	return '\0';
+	return ('\0');
 }
