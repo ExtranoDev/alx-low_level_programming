@@ -36,5 +36,5 @@ int strlenChk(char *s, int n)
 		n++;
 	else
 		return (n);
-	return strlenChk(s += 1);
+	return (strlenChk(s += 1, n));
 }
