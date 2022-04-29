@@ -20,6 +20,8 @@ int square_process(int i, int g)
 {
 	if (g * g == i)
 		return (g);
+	else if (g * g > i || i < 0)
+		return (-1)
 	else
 		return (square_process(i, g += 1));
 }
