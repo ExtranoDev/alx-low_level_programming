@@ -9,4 +9,5 @@ int is_prime_number(int n);
 int square_process(int i, int g);
 int prime_process(int i, int g);
 int is_palindrome(char *s);
-int palindrome_process(char *s, int i);
+int palindrome_process(char *s, int i, int j);
+int strlenChk(char *s, int n);
