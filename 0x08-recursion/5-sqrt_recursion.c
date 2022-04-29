@@ -7,7 +7,7 @@
  */
 int _sqrt_recursion(int n)
 {
-	return sqrt_process(n, 1);
+	return square_process(n, 1);
 }
 
 /**
