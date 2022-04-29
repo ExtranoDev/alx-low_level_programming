@@ -9,7 +9,7 @@ int is_palindrome(char *s)
 {
 	int n = 0, half;
 
-	n = strlenChk(s, n) - 1;
+	n = strlenChk(s, n);
 	if (n % 2 == 0)
 		half = n - 1;
 	return (palindrome_process(s, n, half));
@@ -17,9 +17,10 @@ int is_palindrome(char *s)
 
 /**
  * prime_process - check for prime
+ * @s: String
  * @i: integer
- * @g: divisor
- * Return: sqrt
+ * @j: half of the string
+ * Return: status of string
  */
 int palindrome_process(char *s, int i, int j)
 {
@@ -30,6 +31,12 @@ int palindrome_process(char *s, int i, int j)
 	return (palindrome_process(s += 1, i -= 1, j));
 }
 
+/**
+ * strlenChk - Check length of String
+ * @s: String
+ * @n: int
+ * Return: length of string
+ */
 int strlenChk(char *s, int n)
 {
 	if (*s != '\0')
