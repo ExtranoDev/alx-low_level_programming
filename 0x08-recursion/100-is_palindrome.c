@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * is_palindrome - palindrome checker
@@ -9,9 +10,8 @@ int is_palindrome(char *s)
 {
 	int n = 0, half;
 
-	n = strlenChk(s, n);
-	if (n % 2 != 0)
-		half = n - 1;
+	n = strlenChk(s, n) - 1;
+	half = n / 2;
 	return (palindrome_process(s, n, half));
 }
 
@@ -24,11 +24,12 @@ int is_palindrome(char *s)
  */
 int palindrome_process(char *s, int i, int j)
 {
-	if (*s != s[i])
+	printf("%c : %c : %d\n", *s, *(s + i), i);
+	if (*s != *(s + i))
 		return (0);
-	else if (i == j)
+	else if (i < 1)
 		return (1);
-	return (palindrome_process(s += 1, i -= 1, j));
+	return (palindrome_process(s += 1, i -= 2, j));
 }
 
 /**
