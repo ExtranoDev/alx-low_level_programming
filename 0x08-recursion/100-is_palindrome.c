@@ -24,7 +24,6 @@ int is_palindrome(char *s)
  */
 int palindrome_process(char *s, int i, int j)
 {
-	printf("%c : %c : %d\n", *s, *(s + i), i);
 	if (*s != *(s + i))
 		return (0);
 	else if (i < 1)
