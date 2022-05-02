@@ -13,6 +13,6 @@ int main(void)
 	char *t;
 
 	t = _strpbrk(s, f);
-	printf("%u\n", t);
+	printf("%s\n", t);
 	return (0);
 }
