@@ -26,6 +26,6 @@ char *_strpbrk(char *s, char *accept)
 		}
 	}
 	if (p == 0)
-		return '\0';
+		return ('\0');
 	return (s + p);
 }
