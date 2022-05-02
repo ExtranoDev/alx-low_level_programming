@@ -7,9 +7,10 @@
  *
  * Return: number
  */
-unsigned int *_strspn(char *s, char accept)
+unsigned int _strspn(char *s, char *accept)
 {
-	int i, j, x = 0, y = 0;
+	int i, j, x = 0;
+	unsigned int y = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -18,10 +19,10 @@ unsigned int *_strspn(char *s, char accept)
 			if (s[i] == accept[j])
 			{
 				x++;
-				break
+				break;
 			}
 			else
-				x = 0
+				x = 0;
 		}
 		if (x == 0)
 			break;
