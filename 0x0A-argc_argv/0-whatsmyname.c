@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * whatsmyname - prints program name
+ * main - prints program name
  * @argc: arguement count
  * @argv: arguement array
+ *
+ * Return: Always 0
  */
 int main(int argc, char **argv)
 {
