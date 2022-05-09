@@ -4,3 +4,4 @@ char *_strdup(char *str);
 char *str_concat(char *s1, char *s2);
 int countLen(char *s);
 char *rrconcat(char *s1, char *s2, int n1, int n2);
+int **alloc_grid(int width, int height);
