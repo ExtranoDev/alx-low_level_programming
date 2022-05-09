@@ -1,25 +1,29 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * strdup - duplicates string
+ * _strdup - duplicates string
  * @str: string
  *
  * Return: string
  */
 char *_strdup(char *str)
 {
-	unsigned int n = 0;
+	int n = 0;
 	char *i;
 
-	i = malloc(sizeof(str));
-	if (str == NULL || i == NULL)
+	for ( ; str[n] != '\0'; n++)
+		;
+	n++;
+	if (str == NULL)
 		return ('\0');
-	while (str[n] != '\0')
+	i = malloc(n * sizeof(str));
+	n--;
+	while (n >= 0)
 	{
 		i[n] = str[n];
-		n++;
+		n--;
 	}
-	i[n] = '\0';
 	return (i);
 }
