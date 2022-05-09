@@ -61,7 +61,6 @@ char *rrconcat(char *s1, char *s2, int n1, int n2)
 	for (temp = 0; (i[count] = s2[temp]) != '\0'; ++temp, ++count)
 		;	
 	i[count] = '\0';
-	printf("%s\n", i);
 	return (i);
 }
 
