@@ -47,19 +47,16 @@ char *rrconcat(char *s1, char *s2, int n1, int n2)
 	char *i;
 	int count = 0, temp;
 
-	if (n1 == -1)
-		n1 = 0;
-	else if (n2 == -1)
-		n2 = 0;
-
 	temp = n1 + n2 + 1;
 	i = malloc(temp * sizeof(char));
 	if (i == NULL)
 		return ('\0');
-	for (temp = 0; (i[count] = s1[temp]) != '\0'; ++temp, ++count)
-		;
-	for (temp = 0; (i[count] = s2[temp]) != '\0'; ++temp, ++count)
-		;	
+	if (n1 != -1)
+		for (temp = 0; (i[count] = s1[temp]) != '\0'; ++temp, ++count)
+			;
+	if (n2 != -1)
+		for (temp = 0; (i[count] = s2[temp]) != '\0'; ++temp, ++count)
+			;
 	i[count] = '\0';
 	return (i);
 }
