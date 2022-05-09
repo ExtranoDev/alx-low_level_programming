@@ -13,11 +13,11 @@ char *str_concat(char *s1, char *s2)
 {
 	int i1 = 0, i2 = 0;
 
-	if (i1 != 0)
+	if (s1 != NULL)
 	{
 		i1 = countLen(s1);
 	}
-	if (i2 != 0)
+	if (s2 != NULL)
 	{
 		i2 = countLen(s2);
 	}
