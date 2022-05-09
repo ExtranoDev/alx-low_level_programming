@@ -23,14 +23,21 @@ char *str_concat(char *s1, char *s2)
 		i2 = -1;
 		s2 = "";
 	}
+	else if( i1 == -1 && i2 == -1)
+		return ('\0');
 	if (i1 != -1)
 	{
+		if (i2 != -1)
+			return (s2);
 		i1 = countLen(s1);
 	}
 	if (i2 != -1)
 	{
+		if (i1 != -1)
+			return (s1);
 		i2 = countLen(s2);
 	}
+
 	return (rrconcat(s1, s2, i1, i2));
 }
 
