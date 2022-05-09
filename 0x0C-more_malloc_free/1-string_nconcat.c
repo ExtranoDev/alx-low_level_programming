@@ -28,7 +28,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 	}
 
-	l2++;
 	if (n >= l2)
 		n = l2;
 
