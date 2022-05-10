@@ -27,7 +27,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	else
 	{
 		narr = malloc(new_size);
-		if (narr != NULL)
+		if (narr)
 		{
 			ncarr = (char *)narr;
 			ncptr = (char *)ptr;
