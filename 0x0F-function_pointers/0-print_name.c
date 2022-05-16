@@ -2,8 +2,9 @@
 
 /**
  * print_name - prints inputed name
- * @name - name string
- * @f - function
+ * @name: name string
+ * @f: function
+ * Return: nothing
  */
 void print_name(char *name, void (*f)(char *))
 {
