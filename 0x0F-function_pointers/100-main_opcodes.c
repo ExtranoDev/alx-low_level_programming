@@ -1,6 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+/**
+ * main - prints opcodes
+ * @argc: arguement count
+ * @argv: arguement array
+ * Return: Always 0
+ */
 int main(int argc, char *argv[])
 {
 	int i, j;
