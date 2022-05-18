@@ -35,12 +35,14 @@ void print_all(const char * const format, ...)
 				if (!str)
 				{
 					printf("(nil)");
+					x = 1;
 					break;
 				}
 				printf("%s", str);
 				x = 1;
 				break;
 		}
+
 		if (format[i + 1] != '\0' && x == 1)
 			printf(", ");
 		x = 0;
