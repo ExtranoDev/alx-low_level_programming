@@ -2,7 +2,7 @@
 #define DOGSTRUCT
 
 /**
- * dog - 
+ * struct dog - dog data
  * @name: dog's name
  * @owner: the owner
  * @age: dog's age
@@ -13,6 +13,6 @@ struct dog
 	char *name;
 	char *owner;
 	float age;
-}
+};
 
 #endif
