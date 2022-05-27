@@ -6,7 +6,6 @@
  *
  * Return: num of nodes
  */
-
 size_t print_listint(const listint_t *h)
 {
 	size_t num_n = 0;
