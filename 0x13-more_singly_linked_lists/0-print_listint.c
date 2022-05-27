@@ -12,7 +12,7 @@ size_t print_listint(const listint_t *h)
 	size_t num_n = 0;
 	const listint_t *curNode = h;
 
-	while (curNode)
+	while (curNode != NULL)
 	{
 		printf("%i\n", curNode->n);
 		curNode = curNode->next;
