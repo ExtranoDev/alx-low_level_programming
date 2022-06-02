@@ -13,13 +13,15 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	i = n;
 
-	while(j <= index)
+	if (!n)
+		return (-1);
+
+	while (j <= index)
 	{
-		bitNum[j] = (char)(i % 2);
+		bitNum[j] = i % 2;
 		j++;
 		i /= 2;
 	}
 	bitNum[j] = '\0';
-
 	return (bitNum[index]);
 }
