@@ -13,7 +13,7 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	i = n;
 
-	if (index >= sizeof(n) * 8)
+	if (index >= sizeof(n) * BYTE_CONST)
 		return (-1);
 
 	while (j <= index)
