@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * read_testfile - to read text file
+ * read_textfile - to read text file
  * @filename: name of file
  * @letters: number of letters to be read
  *
@@ -20,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 
-	buf = malloc(letters + 1);
+	buf = malloc(sizeof(char) * letters);
 
 	if (!buf)
 	{
@@ -32,13 +32,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (readLetter == -1)
 		return (0);
 
-	writeLetter = write(STDOUT_FILENO, buf, letters);
-
-	free(buf);
-	close(fd);
+	writeLetter = write(STDOUT_FILENO, buf, readLetter);
 
 	if (writeLetter == -1)
 		return (0);
+
+	free(buf);
+	close(fd);
 
 	return (writeLetter);
 }
