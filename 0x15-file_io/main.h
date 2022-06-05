@@ -1,6 +1,9 @@
 #ifndef FILEE_IO
 #define FILEE_IO
 
+#define STDERR STDERR_FILENO
+#define RSIZE 1024
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
