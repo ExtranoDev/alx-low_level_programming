@@ -19,6 +19,7 @@ int main(int ac, char *av[])
 		dprintf(STDERR, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
+
 	in_fd = open(av[1], O_RDONLY);
 
 	if (in_fd == -1)
@@ -60,6 +61,7 @@ int main(int ac, char *av[])
 		exit(100);
 	}
 	w_letter = close(out_fd);
+
 	if (w_letter == -1)
 	{
 		dprintf(STDERR, "Error: Can't close fd %d\n", out_fd);
