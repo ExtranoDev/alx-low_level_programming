@@ -39,7 +39,7 @@ void check_if_elf(unsigned char *e_ident)
 }
 
 /**
- * print-magic - prints the magic part of the elf header
+ * print_magic - prints the magic part of the elf header
  * @e_ident: pointer to elf header details
  */
 void print_magic(unsigned char *e_ident)
@@ -172,7 +172,7 @@ void print_osabi(unsigned char *e_ident)
 
 /**
  * print_abi - prints ABI version of ELF header
- * #e_ident: point to header of an ELF file
+ * @e_ident: point to header of an ELF file
  */
 void print_abi(unsigned char *e_ident)
 {
