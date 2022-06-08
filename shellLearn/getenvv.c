@@ -8,6 +8,7 @@ char *_getenv(const char *name);
 void printDir(char *dir);
 void linkPath(list_p **h, char *dir);
 void add_to_list(list_p **h, char *str);
+int _setenv(const char *name, const char *value, int overwrite);
 
 /**
  * main - tests my getenv
@@ -130,3 +131,13 @@ char *_getenv(const char *name)
 	}
 	return (NULL);
 }
+/*
+int _setenv(const char *name, const char *value, int overwrite)
+{
+	char *path;
+	if (!name || !value)
+		return (-1);
+	if (path = _getenv(name) != NULL)
+	{
+		if (overwrite > 0)
+	}	*/
