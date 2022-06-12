@@ -40,6 +40,7 @@ int main(int argc, char *argv[])
 		}
 		else
 			wait(NULL);
+		break;
 	}
 	free(str);
 	return (0);
