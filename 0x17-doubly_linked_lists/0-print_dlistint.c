@@ -2,7 +2,7 @@
 
 /**
  * print_dlistint - prints elemets of a double linked list
- * @h - head of list
+ * @h: head of list
  *
  * Return: size of list
  */
