@@ -1,10 +1,10 @@
 # makefiles
 
 CC = gcc
-SRC = $(wildcard *.c)
+SRC = school.c main.c
 OBJ = $(SRC:%.c=%.o)
 NAME = school
-RM = rm -f
+RM = rm
 
 %.o: %.c m.h
 	$(CC) -c -o $@ $<
@@ -12,8 +12,8 @@ RM = rm -f
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 clean:
-	$(RM) *~ $(NAME)
+	$(RM) -f *~ $(NAME)
 oclean:
-	$(RM) $(OBJ)
+	$(RM) -f $(OBJ)
 fclean: clean oclean
 re: fclean all
